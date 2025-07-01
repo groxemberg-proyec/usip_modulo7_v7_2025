@@ -8,7 +8,7 @@ def index(request):
 def contact(request, name):
     return HttpResponse(f"Bienvenido {name} a la clase.")
 
-
+# RESOLUCIÓN DE EJERCICIO 1
 def categorias(request):
     filtro_nombre = request.GET.get("nombre", "")
     if filtro_nombre:
